@@ -1,0 +1,59 @@
+#box {
+      width: 200px;
+      height: 200px;
+      left: calc(5% - 20px);
+      top: 30px;
+      background: grey;
+      position: relative;
+      display: block;
+      border-radius: 20px;
+    }
+    #main {
+        width: 100px;
+        height: 30px;
+  }
+  #body,#top,#left{
+    margin:5px;
+    margin-left: 500px;
+  }
+p{
+  margin: 50px 100px 0px 50px  ;
+  position: relative;
+}
+    #button{
+      position: relative;
+      margin-left:50px;
+      padding: 12px 82px 12px 82px ;
+      border: none;
+      border-radius: 5px;
+      background:blue;
+      color: white;
+    }
+
+    #main .popup {
+        position: absolute;
+        left: 150px;
+        width: 100px;
+        text-align: center;
+        opacity: 0;
+
+    	-webkit-animation: popup 0.5s ease-in;
+    	   -moz-animation: popup 0.5s ease-in;
+    	    -ms-animation: popup 0.5s ease-in;
+    	     -o-animation: popup 0.5s ease-in;
+    	        animation: popup 0.5s ease-in;
+    }
+
+    @-webkit-keyframes popup {
+    	0% 		{ -webkit-transform: translateY(0px) scale(0.5); opacity: 0.5; }
+    	10% 	{ -webkit-transform: translateY(0px) scale(1); opacity: 1;   }
+    	50% 	{ opacity: 1; }
+    	100%	{ -webkit-transform: translateY(-60px); opacity: 0; }
+    }
+
+    @keyframes popup {
+    	0% 		{ transform: translateY(0px) scale(0.5); opacity: 0.5; }
+    	10% 	{ transform: translateY(0px) scale(1); opacity: 1;   }
+    	50% 	{ opacity: 1; }
+    	100%	{ transform: translateY(-60px); opacity: 0; }
+    }
